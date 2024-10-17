@@ -1,0 +1,14 @@
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\bin\Debug\net8.0\RayaBekoIntegration.EF.deps.json
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\bin\Debug\net8.0\RayaBekoIntegration.EF.runtimeconfig.json
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\bin\Debug\net8.0\RayaBekoIntegration.EF.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\bin\Debug\net8.0\RayaBekoIntegration.EF.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.csproj.AssemblyReference.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.GeneratedMSBuildEditorConfig.editorconfig
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.AssemblyInfoInputs.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.AssemblyInfo.cs
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.csproj.CoreCompileInputs.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\refint\RayaBekoIntegration.EF.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\RayaBekoIntegration.EF.genruntimeconfig.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration.EF\obj\Debug\net8.0\ref\RayaBekoIntegration.EF.dll

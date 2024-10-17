@@ -1,0 +1,6 @@
+@RayaBekoIntegration.WebAPI_HostAddress = http://localhost:5234
+
+GET {{RayaBekoIntegration.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

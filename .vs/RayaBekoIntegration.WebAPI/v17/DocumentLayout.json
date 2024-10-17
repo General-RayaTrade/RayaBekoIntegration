@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\RayaBekoIntegration.WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.service\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|solutionrelative:rayabekointegration.service\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.core\\models\\b2crayaservicestockresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\models\\b2crayaservicestockresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.core\\models\\iteminventoryquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\models\\iteminventoryquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.webapi\\resonsesmodelviews\\productstockresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\resonsesmodelviews\\productstockresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.webapi\\resonsesmodelviews\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\resonsesmodelviews\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration.core\\iservices\\istockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\iservices\\istockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "B2CRayaServiceStockResponse.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:43:47.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Program.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\Program.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:56:55.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemInventoryQuantity.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:19:23.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Response.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\ResonsesModelViews\\Response.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\ResonsesModelViews\\Response.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\ResonsesModelViews\\Response.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\ResonsesModelViews\\Response.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:12:13.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductStockResponse.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:11:44.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:50:47.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockService.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\Services\\StockService.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\StockService.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\Services\\StockService.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Service\\Services\\StockService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:48:31.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IStockService.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\IServices\\IStockService.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\IServices\\IStockService.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\IServices\\IStockService.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\IServices\\IStockService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:47:25.363Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
