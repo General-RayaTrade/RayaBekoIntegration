@@ -31,5 +31,10 @@ namespace RayaBekoIntegration.Service.Services
 
             return itemInventoryQuantities ?? new List<ItemInventoryQuantity>();
         }
+
+        public Task<IList<ItemInventoryQuantity>?> GetStocksForAllItems()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

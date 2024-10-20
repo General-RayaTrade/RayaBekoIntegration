@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj": {}
+    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj": {}
   },
   "projects": {
-    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj": {
+    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj",
+        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj",
         "projectName": "RayaBekoIntegration.Core",
-        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj",
+        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj",
         "packagesPath": "C:\\Users\\hossam_fathy\\.nuget\\packages\\",
-        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\obj\\",
+        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hossam_fathy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,14 +84,14 @@
         }
       }
     },
-    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj": {
+    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj",
+        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj",
         "projectName": "RayaBekoIntegration.Service",
-        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj",
+        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj",
         "packagesPath": "C:\\Users\\hossam_fathy\\.nuget\\packages\\",
-        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Service\\obj\\",
+        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hossam_fathy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj": {
-                "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj"
+              "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj": {
+                "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj"
               }
             }
           }

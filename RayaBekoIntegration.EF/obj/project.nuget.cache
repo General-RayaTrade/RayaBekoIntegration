@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+rKqOzWvG5wHtGEbXZnPJyDPhq/mpnvVLhtyAag31RaYIk2LZWepq/MvHCiO3ui3PaVUXO3MkebgfS91D+QhlA==",
+  "dgSpecHash": "fhfGNhWHQDDy4WbaCkxJO1jhxTVA5tVFVttEjqVbORyaEhwRKJCu7KigZPZezYbPznkb5TvPm+UrV4WLhX1qIQ==",
   "success": true,
-  "projectFilePath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
+  "projectFilePath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hossam_fathy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hossam_fathy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

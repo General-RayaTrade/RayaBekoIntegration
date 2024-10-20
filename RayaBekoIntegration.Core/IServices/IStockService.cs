@@ -10,5 +10,6 @@ namespace RayaBekoIntegration.Core.IServices
     public interface IStockService
     {
         Task<IList<ItemInventoryQuantity>?> GetStockForProductAsync(string productItemCode);
+        Task<IList<ItemInventoryQuantity>?> GetStocksForAllItems();
     }
 }

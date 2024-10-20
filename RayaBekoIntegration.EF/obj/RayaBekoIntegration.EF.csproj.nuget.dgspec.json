@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj": {}
+    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj": {}
   },
   "projects": {
-    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj": {
+    "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
+        "projectUniqueName": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
         "projectName": "RayaBekoIntegration.EF",
-        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
+        "projectPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj",
         "packagesPath": "C:\\Users\\hossam_fathy\\.nuget\\packages\\",
-        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration.EF\\obj\\",
+        "outputPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hossam_fathy\\AppData\\Roaming\\NuGet\\NuGet.Config",
