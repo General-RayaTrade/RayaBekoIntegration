@@ -20,7 +20,9 @@ E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bi
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.Service.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.Service.pdb
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.Core.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.EF.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.Core.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\bin\Debug\net8.0\RayaBekoIntegration.EF.pdb
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\obj\Debug\net8.0\RayaBekoIntegration.Service.csproj.AssemblyReference.cache
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\obj\Debug\net8.0\RayaBekoIntegration.Service.GeneratedMSBuildEditorConfig.editorconfig
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Service\obj\Debug\net8.0\RayaBekoIntegration.Service.AssemblyInfoInputs.cache

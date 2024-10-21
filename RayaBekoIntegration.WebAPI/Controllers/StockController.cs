@@ -4,18 +4,24 @@ using RayaBekoIntegration.Core.Models;
 using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 using System.Net.Mime;
 using Swashbuckle.AspNetCore.Annotations;
+using Microsoft.AspNetCore.Authorization;
+using RayaBekoIntegration.Services;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [Authorize]
     [Produces(MediaTypeNames.Application.Json)]
     [Route("api/v1.0/[controller]")]
     [ApiController]
     public class StockController : ControllerBase
     {
         private readonly IStockService _stockService;
-        public StockController(IStockService stockService)
+        private readonly ITokenService _tokenService;
+        public StockController(IStockService stockService, ITokenService tokenService)
         {
             _stockService = stockService;
+            _tokenService = tokenService;
+
         }
         [HttpGet("{productItemCode}")]
         [Produces("application/json")]
@@ -27,6 +33,14 @@ namespace RayaBekoIntegration.WebAPI.Controllers
         )]
         public async Task<IActionResult> GetStock(string productItemCode)
         {
+            // Extract the access token from the request (usually from Authorization header)
+            var accessToken = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+            // Validate the access token
+            if (!_tokenService.IsAccessTokenValid(accessToken))
+            {
+                return Unauthorized("Access token is expired or invalid.");
+            }
             IList<ItemInventoryQuantity>? stock = await _stockService.GetStockForProductAsync(productItemCode);
             if (stock == null) return NotFound($"Product item code [{productItemCode}] not found.");
 
@@ -48,36 +62,5 @@ namespace RayaBekoIntegration.WebAPI.Controllers
             };
             return Ok(model);
         }
-        //[HttpGet]
-        //[Produces("application/json")]
-        //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<ProductStockResponse>))]
-        //[ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(Response<object>))]
-        //[SwaggerOperation(
-        //    Summary = "Retrieve stock details for a specific product",
-        //    Description = "Returns the stock quantity and inventory details for a given product identified by the productItemCode. If the product is not found, a 404 status is returned."
-        //)]
-        //public async Task<IActionResult> GetStocks()
-        //{
-        //    IList<ItemInventoryQuantity>? stock = await _stockService.GetStockForProductAsync(productItemCode);
-        //    if (stock == null) return NotFound($"Product item code [{productItemCode}] not found.");
-
-        //    Response<ProductStockResponse> model = new Response<ProductStockResponse>
-        //    {
-        //        StatusCode = 200,
-        //        Payload = new ProductStockResponse
-        //        {
-        //            productItemCode = productItemCode,
-        //            Details = stock
-        //                .Where(st => st != null) // Ensure no null entries
-        //                .Select(st => new ItemInventoryQuantity
-        //                {
-        //                    quantity = st.quantity,
-        //                    inventory = st.inventory,
-        //                })
-        //                .ToList()
-        //        }
-        //    };
-        //    return Ok(model);
-        //}
     }
 }

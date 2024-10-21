@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RayaBekoIntegration.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a27a79e889f01d7733aad06bca94483a55f1b348")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42e3ae36157764314d896a6b57865e89aba3756b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RayaBekoIntegration.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RayaBekoIntegration.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

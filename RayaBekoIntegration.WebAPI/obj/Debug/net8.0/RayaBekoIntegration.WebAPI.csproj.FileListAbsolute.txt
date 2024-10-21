@@ -167,7 +167,9 @@ E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\System.Web.WebPages.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -199,6 +201,7 @@ E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Serilog.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -282,8 +285,10 @@ E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.Core.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.EF.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.Service.dll
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.Core.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.EF.pdb
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\bin\Debug\net8.0\RayaBekoIntegration.Service.pdb
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\obj\Debug\net8.0\RayaBekoIntegration.WebAPI.csproj.AssemblyReference.cache
 E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.WebAPI\obj\Debug\net8.0\RayaBekoIntegration.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
