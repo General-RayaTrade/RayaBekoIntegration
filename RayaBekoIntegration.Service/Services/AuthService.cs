@@ -17,14 +17,12 @@ namespace RayaBekoIntegration.Service.Services
         private readonly ITokenService _tokenService; // Inject token service
         private readonly IUserService _userService; // Inject user service
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IRefreshTokenService _refreshTokenService; // Inject refresh token service
 
-        public AuthService(ITokenService tokenService, IUserService userService, IUnitOfWork unitOfWork, IRefreshTokenService refreshTokenService)
+        public AuthService(ITokenService tokenService, IUserService userService, IUnitOfWork unitOfWork)
         {
             _tokenService = tokenService;
             _userService = userService;
             _unitOfWork = unitOfWork;
-            _refreshTokenService = refreshTokenService;
 
         }
         public async Task<TokenRequest> Login(LoginModel loginModel)

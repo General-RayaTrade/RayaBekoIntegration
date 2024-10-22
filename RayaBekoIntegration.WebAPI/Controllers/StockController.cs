@@ -5,7 +5,8 @@ using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 using System.Net.Mime;
 using Swashbuckle.AspNetCore.Annotations;
 using Microsoft.AspNetCore.Authorization;
-using RayaBekoIntegration.Services;
+using RayaBekoIntegration.Core.Models.Responses;
+using RayaBekoIntegration.Service.Services;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
@@ -17,10 +18,12 @@ namespace RayaBekoIntegration.WebAPI.Controllers
     {
         private readonly IStockService _stockService;
         private readonly ITokenService _tokenService;
+        private readonly IResponseService<ProductStockResponse> _responseService;
         public StockController(IStockService stockService, ITokenService tokenService)
         {
             _stockService = stockService;
             _tokenService = tokenService;
+            _responseService = new ResponseService<ProductStockResponse>();
 
         }
         [HttpGet("{productItemCode}")]
@@ -44,13 +47,10 @@ namespace RayaBekoIntegration.WebAPI.Controllers
             IList<ItemInventoryQuantity>? stock = await _stockService.GetStockForProductAsync(productItemCode);
             if (stock == null) return NotFound($"Product item code [{productItemCode}] not found.");
 
-            Response<ProductStockResponse> model = new Response<ProductStockResponse>
+            var payload = new ProductStockResponse
             {
-                StatusCode = 200,
-                Payload = new ProductStockResponse
-                {
-                    productItemCode = productItemCode,
-                    Details = stock
+                productItemCode = productItemCode,
+                Details = stock
                         .Where(st => st != null) // Ensure no null entries
                         .Select(st => new ItemInventoryQuantity
                         {
@@ -58,8 +58,8 @@ namespace RayaBekoIntegration.WebAPI.Controllers
                             inventory = st.inventory,
                         })
                         .ToList()
-                }
             };
+            var model = _responseService.CreateResponse(statusCode: 200, payload: payload);
             return Ok(model);
         }
     }

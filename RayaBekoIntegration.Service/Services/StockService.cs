@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
 using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
-using RayaBekoIntegration.WebAPI.ResonsesModelViews;
+using RayaBekoIntegration.Core.Models.Responses;
+//using RayaBekoIntegration.Core.Models;
+//using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 
 namespace RayaBekoIntegration.Service.Services
 {

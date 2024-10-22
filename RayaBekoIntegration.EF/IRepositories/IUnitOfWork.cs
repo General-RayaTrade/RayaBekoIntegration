@@ -11,6 +11,9 @@ namespace RayaBekoIntegration.EF.IRepositories
         ApplicationDbContext context { get; }
         IBaseRepository<RefreshToken> refreshTokens {  get; }
         IBaseRepository<User> users {  get; }
+        IBaseRepository<Order> orders {  get; }
+        IBaseRepository<OrderDetail> orderDetails {  get; }
+        IBaseRepository<OrderStatusLog> orderStatusLogs {  get; }
         int Complete();
     }
 }

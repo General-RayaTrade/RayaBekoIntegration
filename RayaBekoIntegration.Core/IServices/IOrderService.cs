@@ -1,4 +1,5 @@
 ﻿using RayaBekoIntegration.Core.Models;
+using RayaBekoIntegration.Core.Models.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace RayaBekoIntegration.Core.IServices
 {
     public interface IOrderService
     {
-        Task<SalesOrder> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder);
+        Task<D365_SalesOrderResponses> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder);
         SalesOrder MapBekoOrderToRayaOrder(BekoOrderRequest bekoOrder);
     }
 }

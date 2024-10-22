@@ -1,5 +1,8 @@
 ﻿using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
+using RayaBekoIntegration.Core.Models.Responses;
+using RayaBekoIntegration.EF;
+using RayaBekoIntegration.EF.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +14,61 @@ namespace RayaBekoIntegration.Service.Services
 {
     public class OrderService : IOrderService
     {
-        public async Task<SalesOrder> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder)
+        private readonly IUnitOfWork _unitOfWork;
+        public OrderService(IUnitOfWork unitOfWork)
         {
-            // Map BEKO order to Raya order
-            SalesOrder salesOrder = MapBekoOrderToRayaOrder(bekoOrder);
-
-            // Calling B2C Raya creation order API.
-            var result = await CallingB2CRayaOrderCreationAPI(new D365_SalesOrder_Request
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<D365_SalesOrderResponses> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder)
+        {
+            try
             {
-                SalesOrder = new List<SalesOrder> { salesOrder }
-            });
-            return salesOrder;
+                // Map BEKO order to Raya order
+                SalesOrder salesOrder = MapBekoOrderToRayaOrder(bekoOrder);
+
+                // Calling B2C Raya creation order API.
+                var result = await CallingB2CRayaOrderCreationAPI(new D365_SalesOrder_Request
+                {
+                    SalesOrder = new List<SalesOrder> { salesOrder }
+                });
+
+                D365_SalesOrderResponses response = System.Text.Json.JsonSerializer.Deserialize<D365_SalesOrderResponses>(result)!;
+                if (response.D365_SalesOrderResponseList != null && response.D365_SalesOrderResponseList.First().status && !response.D365_SalesOrderResponseList.First().Message.Contains("already exist"))
+                {
+                    var order = new Order
+                    {
+                        BekoOrderNumber = bekoOrder.Id.ToString(),
+                        RayaOrderNumber = response.D365_SalesOrderResponseList.First().D365_OrderNumber,
+                        RayaOrderStatus = nameof(Core.Consts.RayaOrderStatus.OpenOrder),
+                        BekoOrderStatus = nameof(Core.Consts.BekoOrderStatus.Confirmed)
+                    };
+                    _unitOfWork.orders.Add(order);
+                    // Save the BekoOrder payload to a file (append to existing file)
+                    string filePath = $"E:\\Logs\\BekoOrdersLog-{DateTime.Now.Day}.txt"; // Specify the file path
+                    string serializedBekoOrder = System.Text.Json.JsonSerializer.Serialize(bekoOrder);
+                    await File.AppendAllTextAsync(filePath, $"{DateTime.Now}: {serializedBekoOrder}\n\n\n");
+                    var orderDetails = new OrderDetail
+                    {
+                        BekoOrderNumber = bekoOrder.Id.ToString(),
+                        RayaOrderNumber = response.D365_SalesOrderResponseList.First().D365_OrderNumber,
+                        FilePath = filePath,
+                    };
+                    _unitOfWork.orderDetails.Add(orderDetails);
+                    var orderStatusLog = new OrderStatusLog
+                    {
+                        BekoOrderNumber = bekoOrder.Id.ToString(),
+                        RayaOrderNumber = response.D365_SalesOrderResponseList.First().D365_OrderNumber,
+                        RayaOrderStatus = nameof(Core.Consts.RayaOrderStatus.OpenOrder),
+                        BekoOrderStatus = nameof(Core.Consts.BekoOrderStatus.Confirmed),
+                    };
+                    _unitOfWork.orderStatusLogs.Add(orderStatusLog);
+                }
+                return response;
+            } catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
         }
 
         public SalesOrder MapBekoOrderToRayaOrder(BekoOrderRequest bekoOrder)
@@ -53,7 +100,9 @@ namespace RayaBekoIntegration.Service.Services
                 {
                     ItemCode = product.SkuId,
                     QtySold = product.Quantity,
-                    UnitPrice = decimal.Parse(product.Price.Replace("EGP", "").Trim())
+                    UnitPrice = decimal.Parse(product.Price.Replace("EGP", "").Trim()),
+                    StoreID = "4016"
+
                 };
                 orderItems.Add(orderItem);
             }
@@ -79,6 +128,11 @@ namespace RayaBekoIntegration.Service.Services
                 Totals = totals,
                 Comment = "Beko Online Order",
                 Source = "Beko",
+                WorkerNumber = 5637144576,
+                M_Recive_Type = "RAYA Express",
+                DueDate = DateTime.Parse(bekoOrder.CreatedAt.ToString()).AddDays(1).ToString(),
+                StoreID = "4016",
+
             };
 
             return salesOrder;

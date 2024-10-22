@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
+using RayaBekoIntegration.Core.Models.Responses;
 using RayaBekoIntegration.Service.Services;
 using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 using Swashbuckle.AspNetCore.Annotations;
@@ -9,15 +11,18 @@ using System.Net.Mime;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [Authorize]
     [Produces(MediaTypeNames.Application.Json)]
     [Route("api/v1.0/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
     {
+        private readonly IResponseService<D365_SalesOrderResponses> _responseService;
         private readonly IOrderService _orderService;
         public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
+            _responseService = new ResponseService<D365_SalesOrderResponses>();
         }
         [HttpPost("Create")]
         [Produces("application/json")]
@@ -41,15 +46,19 @@ namespace RayaBekoIntegration.WebAPI.Controllers
                 }
 
                 // Call service to map and create the order in Raya's system
-                var createdOrder = await _orderService.CreateOrderFromBekoAsync(bekoOrder);
+                var orderResponses = await _orderService.CreateOrderFromBekoAsync(bekoOrder);
+                Response<D365_SalesOrderResponses> model;
+                if (orderResponses == null || !orderResponses.D365_SalesOrderResponseList.FirstOrDefault()!.status)
+                {
+                    model = _responseService.CreateResponse(statusCode: 400, payload: orderResponses);
+                }
+                else
+                {
+                    model = _responseService.CreateResponse(statusCode: 200, payload: orderResponses);
+                }
 
                 // Return success response
-                return Ok(new
-                {
-                    success = true,
-                    message = "Order created successfully",
-                    orderNumber = createdOrder.M_OrderNumber
-                });
+                return Ok(model);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,4 @@
-﻿namespace RayaBekoIntegration.WebAPI.ResonsesModelViews
+﻿namespace RayaBekoIntegration.Core.Models.Responses
 {
     public class Response<T> where T : class
     {

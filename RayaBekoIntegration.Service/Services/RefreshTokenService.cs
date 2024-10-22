@@ -10,7 +10,6 @@ using System.Security.Claims;
 
 public class RefreshTokenService : IRefreshTokenService
 {
-    //private readonly ApplicationDbContext _dbContext;
     private readonly IUnitOfWork _unitOfWork;
     private readonly ITokenService _tokenService;
 
@@ -23,8 +22,6 @@ public class RefreshTokenService : IRefreshTokenService
     public async Task SaveRefreshToken(RefreshToken token)
     {
         _unitOfWork.refreshTokens.Add(token);
-        //_dbContext.RefreshTokens.Add(token);
-        //await _dbContext.SaveChangesAsync();
     }
 
     public async Task<RefreshToken> GetRefreshToken(string username, string password)
@@ -39,9 +36,6 @@ public class RefreshTokenService : IRefreshTokenService
 
     public async Task UpdateRefreshToken(RefreshToken token)
     {
-        //var existingToken = await _dbContext.RefreshTokens
-        //                          .AsNoTracking()
-        //                          .FirstOrDefaultAsync(rt => rt.UserId == token.UserId && rt.Token == token.Token);
         var existingToken = await _unitOfWork.refreshTokens.FindAsync(rt => rt.UserId == token.UserId && rt.Token == token.Token);
 
         if (existingToken != null)

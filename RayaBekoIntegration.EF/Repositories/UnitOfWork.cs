@@ -12,11 +12,17 @@ namespace RayaBekoIntegration.EF.Repositories
         public ApplicationDbContext context { get; }
         public IBaseRepository<RefreshToken> refreshTokens { get; set; }
         public IBaseRepository<User> users { get; set; }
+        public IBaseRepository<Order> orders { get; set; }
+        public IBaseRepository<OrderDetail> orderDetails { get; set; }
+        public IBaseRepository<OrderStatusLog> orderStatusLogs { get; set; }
         public UnitOfWork(ApplicationDbContext context)
         {
             this.context = context;
             refreshTokens = new BaseRepository<RefreshToken>(context);
             users = new BaseRepository<User>(context);
+            orders = new BaseRepository<Order>(context);
+            orderDetails = new BaseRepository<OrderDetail>(context);
+            orderStatusLogs = new BaseRepository<OrderStatusLog>(context);
         }
 
         public int Complete()

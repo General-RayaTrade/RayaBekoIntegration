@@ -18,6 +18,11 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<RefreshToken> RefreshTokens { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Order> Orders { get; set; }
+
+    public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+
+    public virtual DbSet<OrderStatusLog> OrderStatusLogs { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("server=192.168.0.173,34300;Database=BekoIntegration;User ID=sa;Password=Dataadmin2010;integrated security=false;TrustServerCertificate=True;Connection Timeout=3600")
@@ -53,6 +58,90 @@ public partial class ApplicationDbContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.Username)
                 .HasMaxLength(256)
+                .IsUnicode(false);
+        });
+        modelBuilder.Entity<Order>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Orders__3214EC0743F90F04");
+
+            entity.ToTable(tb => tb.HasTrigger("TR_Orders_UpdateModificationDate"));
+
+            entity.HasIndex(e => e.BekoOrderNumber, "IX_Orders_BekoOrderNumber");
+
+            entity.HasIndex(e => e.BekoOrderStatus, "IX_Orders_BekoOrderStatus");
+
+            entity.HasIndex(e => e.RayaOrderNumber, "IX_Orders_RayaOrderNumber");
+
+            entity.HasIndex(e => e.RayaOrderStatus, "IX_Orders_RayaOrderStatus");
+
+            entity.Property(e => e.BekoOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.BekoOrderStatus)
+                .HasMaxLength(32)
+                .IsUnicode(false);
+            entity.Property(e => e.CreationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.ModificationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.RayaOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.RayaOrderStatus)
+                .HasMaxLength(64)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<OrderDetail>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__OrderDet__3214EC07B4F527C4");
+
+            entity.HasIndex(e => e.BekoOrderNumber, "IX_OrderDetails_BekoOrderNumber");
+
+            entity.HasIndex(e => e.RayaOrderNumber, "IX_OrderDetails_RayaOrderNumber");
+
+            entity.Property(e => e.BekoOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.FilePath).IsUnicode(false);
+            entity.Property(e => e.RayaOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<OrderStatusLog>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__OrderSta__3214EC07310EC51F");
+
+            entity.ToTable(tb => tb.HasTrigger("TR_OrderStatusLogs_UpdateModificationDate"));
+
+            entity.HasIndex(e => e.BekoOrderNumber, "IX_OrderStatusLogs_BekoOrderNumber");
+
+            entity.HasIndex(e => e.BekoOrderStatus, "IX_OrderStatusLogs_BekoOrderStatus");
+
+            entity.HasIndex(e => e.RayaOrderNumber, "IX_OrderStatusLogs_RayaOrderNumber");
+
+            entity.HasIndex(e => e.RayaOrderStatus, "IX_OrderStatusLogs_RayaOrderStatus");
+
+            entity.Property(e => e.BekoOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.BekoOrderStatus)
+                .HasMaxLength(32)
+                .IsUnicode(false);
+            entity.Property(e => e.CreationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.ModificationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.RayaOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.RayaOrderStatus)
+                .HasMaxLength(64)
                 .IsUnicode(false);
         });
 

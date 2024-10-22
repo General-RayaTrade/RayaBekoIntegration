@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayaBekoIntegration.Core.Consts
 {
-    public enum OrderStatus
+    public enum BekoOrderStatus
     {
         Pending,
         Confirmed,
