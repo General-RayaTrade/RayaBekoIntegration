@@ -15,6 +15,8 @@ namespace RayaBekoIntegration.EF.Repositories
         public IBaseRepository<Order> orders { get; set; }
         public IBaseRepository<OrderDetail> orderDetails { get; set; }
         public IBaseRepository<OrderStatusLog> orderStatusLogs { get; set; }
+        public IBaseRepository<VWcityDistrict> vWCityDistricts { get; }
+
         public UnitOfWork(ApplicationDbContext context)
         {
             this.context = context;
@@ -23,6 +25,7 @@ namespace RayaBekoIntegration.EF.Repositories
             orders = new BaseRepository<Order>(context);
             orderDetails = new BaseRepository<OrderDetail>(context);
             orderStatusLogs = new BaseRepository<OrderStatusLog>(context);
+            vWCityDistricts = new BaseRepository<VWcityDistrict>(context);
         }
 
         public int Complete()

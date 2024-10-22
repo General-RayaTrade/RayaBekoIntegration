@@ -14,6 +14,7 @@ namespace RayaBekoIntegration.EF.IRepositories
         IBaseRepository<Order> orders {  get; }
         IBaseRepository<OrderDetail> orderDetails {  get; }
         IBaseRepository<OrderStatusLog> orderStatusLogs {  get; }
+        IBaseRepository<VWcityDistrict> vWCityDistricts {  get; }
         int Complete();
     }
 }

@@ -23,6 +23,8 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
 
     public virtual DbSet<OrderStatusLog> OrderStatusLogs { get; set; }
+    public virtual DbSet<VWcityDistrict> VWcityDistricts { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("server=192.168.0.173,34300;Database=BekoIntegration;User ID=sa;Password=Dataadmin2010;integrated security=false;TrustServerCertificate=True;Connection Timeout=3600")
@@ -31,6 +33,24 @@ public partial class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<VWcityDistrict>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("vWCityDistrict");
+
+            entity.Property(e => e.CNameAr)
+                .HasMaxLength(255)
+                .HasColumnName("C_NameAR");
+            entity.Property(e => e.CityId).HasColumnName("CityID");
+            entity.Property(e => e.DName)
+                .HasMaxLength(255)
+                .HasColumnName("D_Name");
+            entity.Property(e => e.DNameAr)
+                .HasMaxLength(255)
+                .HasColumnName("D_NameAR");
+            entity.Property(e => e.Id).HasColumnName("ID");
+        });
         modelBuilder.Entity<RefreshToken>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__RefreshT__3214EC07BB4DB1DD");

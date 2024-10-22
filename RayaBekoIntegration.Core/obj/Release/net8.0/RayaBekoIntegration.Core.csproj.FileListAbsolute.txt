@@ -1,0 +1,15 @@
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\bin\Release\net8.0\RayaBekoIntegration.Core.deps.json
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\bin\Release\net8.0\RayaBekoIntegration.Core.runtimeconfig.json
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\bin\Release\net8.0\RayaBekoIntegration.Core.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\bin\Release\net8.0\RayaBekoIntegration.Core.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.csproj.AssemblyReference.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.AssemblyInfoInputs.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.AssemblyInfo.cs
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.csproj.CoreCompileInputs.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.sourcelink.json
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\refint\RayaBekoIntegration.Core.dll
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.pdb
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\RayaBekoIntegration.Core.genruntimeconfig.cache
+E:\RayaBekoIntegration.WebAPI\RayaBekoIntegration\RayaBekoIntegration.Core\obj\Release\net8.0\ref\RayaBekoIntegration.Core.dll

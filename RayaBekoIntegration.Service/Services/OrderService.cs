@@ -44,7 +44,7 @@ namespace RayaBekoIntegration.Service.Services
                     };
                     _unitOfWork.orders.Add(order);
                     // Save the BekoOrder payload to a file (append to existing file)
-                    string filePath = $"E:\\Logs\\BekoOrdersLog-{DateTime.Now.Day}.txt"; // Specify the file path
+                    string filePath = $"D:\\WebApplications\\BekoIntegration\\Logs\\BekoOrdersLogs-{DateTime.Now.Date}.txt"; // Specify the file path
                     string serializedBekoOrder = System.Text.Json.JsonSerializer.Serialize(bekoOrder);
                     await File.AppendAllTextAsync(filePath, $"{DateTime.Now}: {serializedBekoOrder}\n\n\n");
                     var orderDetails = new OrderDetail

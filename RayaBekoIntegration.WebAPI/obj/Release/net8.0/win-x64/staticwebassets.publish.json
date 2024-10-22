@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zTzbqeUeRErUaiGMqdmB9hjgGokpkq3Xx7OyK/rPr4g=",
+  "Source": "RayaBekoIntegration.WebAPI",
+  "BasePath": "_content/RayaBekoIntegration.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

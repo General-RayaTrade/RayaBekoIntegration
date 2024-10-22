@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RayaBekoIntegration.WebAPI.props" />
+</Project>
