@@ -1,4 +1,5 @@
-﻿using RayaBekoIntegration.Core.IServices;
+﻿using Azure.Core;
+using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
 using RayaBekoIntegration.Core.Models.Responses;
 using RayaBekoIntegration.EF;
@@ -18,6 +19,36 @@ namespace RayaBekoIntegration.Service.Services
         public OrderService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+        }
+
+        public async Task<CancelSalesOrderResponse> CancelOrder(int bekoOrderId)
+        {
+            CancelSalesOrderRequest cancelSalesRequest = new CancelSalesOrderRequest()
+            {
+                MagentoRef = bekoOrderId.ToString()
+            };
+            var response = await CallingB2CRayaCancelOrderAPI(cancelSalesRequest);
+            CancelSalesOrderResponse result = System.Text.Json.JsonSerializer.Deserialize<CancelSalesOrderResponse>(response)!;
+            return result;
+        }
+        public async Task<string> CallingB2CRayaCancelOrderAPI(CancelSalesOrderRequest requestModel)
+        {
+            Console.WriteLine(DateTime.Now.ToString() + " Cancel Dx Order: " + requestModel.MagentoRef);
+            var client = new HttpClient(); // ideally this would be created from IHttpClientFactory
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));//ACCEPT header
+            //var request = new HttpRequestMessage(HttpMethod.Post, "http://www.rayatrade.com/RayaB2C_API/api/B2C_Prod/Cancel_D365_SalesOrder");
+            var request = new HttpRequestMessage(HttpMethod.Post, "http://rayatrade.com/RayaB2C_API_STG/api/B2C_Prod/Cancel_D365_SalesOrder");
+            //var request = new HttpRequestMessage(HttpMethod.Post, "http://localhost:31015/api/B2C_Staging/Create_D365_SalesOrder_Json");
+
+            request.Headers.Add("Authorization", "Bearer npOCJrfVPZa1oYFibdkvlf2HeFFn-soDiiF0HepgECTAN-GUP5bHKJVddcILEsXCK4xDITq4KUFtpBxgQs88q6LMFgCt0Udy9kOqVw2PazymmtLko5-OVK23trBB-7buwO-7IW2l1h-yNE2DG3Hk-5zl9aARCyGnLz6ekQYjDEwEq3t98Lu7XHUQn579vUzIyGkrq02s7Tlt9pf2dKCkQooVgzTI44xK3-t4BKqhSsJaFOGcFvSgjvNwXZWGqlME");
+            var body = System.Text.Json.JsonSerializer.Serialize(requestModel);
+            request.Content = new StringContent(body, null, "application/json");
+            var response = await client.SendAsync(request);
+            var result = await response.Content.ReadAsStringAsync();
+
+            Console.WriteLine(DateTime.Now.ToString() + " Dx Order Cancelation : " + requestModel.MagentoRef + " with result: " + result);
+
+            return result;
         }
         public async Task<D365_SalesOrderResponses> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder)
         {

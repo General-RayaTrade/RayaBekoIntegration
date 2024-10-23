@@ -70,7 +70,45 @@ namespace RayaBekoIntegration.WebAPI.Controllers
                 });
             }
         }
+        [HttpPost("Cancel/{OrderNumber}")]
+        [Produces("application/json")]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<ProductStockResponse>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
+        [SwaggerOperation(
+            Summary = "Create an order based on Beko request",
+            Description = "Creates an order in Raya's system from the Beko order details provided."
+        )]
+        public async Task<IActionResult> Cancel(int BekoOrderNumber)
+        {
+            try
+            {
+                // Call service to map and create the order in Raya's system
+                var orderResponses = await _orderService.CancelOrder(BekoOrderNumber);
+                var responseService = new ResponseService<CancelSalesOrderResponse>();
 
+                Response<CancelSalesOrderResponse> model;
+                if (orderResponses == null || !orderResponses.Status)
+                {
+                    model = responseService.CreateResponse(statusCode: 400, payload: orderResponses);
+                }
+                else
+                {
+                    model = responseService.CreateResponse(statusCode: 200, payload: orderResponses);
+                }
+
+                // Return success response
+                return Ok(model);
+            }
+            catch (Exception ex)
+            {
+                // Handle errors and return appropriate response
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error creating order: {ex.Message}"
+                });
+            }
+        }
         //[HttpPost("return-status/{orderId}")]
         //[Produces("application/json")]
         //[ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<ProductStockResponse>))]

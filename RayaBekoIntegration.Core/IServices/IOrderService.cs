@@ -12,5 +12,7 @@ namespace RayaBekoIntegration.Core.IServices
     {
         Task<D365_SalesOrderResponses> CreateOrderFromBekoAsync(BekoOrderRequest bekoOrder);
         SalesOrder MapBekoOrderToRayaOrder(BekoOrderRequest bekoOrder);
+        Task<CancelSalesOrderResponse> CancelOrder(int bekoOrderId);
+        Task<string> CallingB2CRayaCancelOrderAPI(CancelSalesOrderRequest requestModel);
     }
 }
