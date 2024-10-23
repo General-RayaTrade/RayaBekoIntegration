@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\districtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\districtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|solutionrelative:rayabekointegration.service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.service\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.core\\models\\cancelsalesorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\models\\cancelsalesorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\districtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\districtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.core\\iservices\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,14 +83,6 @@
       "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\models\\responses\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|solutionrelative:rayabekointegration.service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.core\\consts\\bekoorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|solutionrelative:rayabekointegration.core\\consts\\bekoorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,10 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F13EDA28-FD2A-4918-B48D-97A619702160}|RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.ef\\irepositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F13EDA28-FD2A-4918-B48D-97A619702160}|RayaBekoIntegration.EF\\RayaBekoIntegration.EF.csproj|solutionrelative:rayabekointegration.ef\\irepositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\resonsesmodelviews\\productstockresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,10 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.service\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E75B4AE-0721-4FD2-BBF8-D0F90AE489B1}|RayaBekoIntegration.Service\\RayaBekoIntegration.Service.csproj|solutionrelative:rayabekointegration.service\\services\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.webapi\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498ED871-1C8A-4369-B07B-55B8A936BBCD}|RayaBekoIntegration.WebAPI\\RayaBekoIntegration.WebAPI.csproj|solutionrelative:rayabekointegration.webapi\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44DA1AA3-7369-420A-A00A-A9F4B7AABF94}|RayaBekoIntegration.Core\\RayaBekoIntegration.Core.csproj|e:\\rayabekointegration.webapi\\rayabekointegration\\rayabekointegration.core\\models\\tokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -202,7 +202,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -230,80 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CancelSalesOrderResponse.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:51:56.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CancelSalesOrderRequest.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:49:12.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAIwFEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T11:40:28.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T11:33:38.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\OrderService.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\OrderService.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Service\\Services\\OrderService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T11:38:14.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "D365_SalesOrderResponses.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T10:48:50.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ResponseService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\ResponseService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\ResponseService.cs",
@@ -315,31 +242,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DistrictsController.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
-              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwB0AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T10:48:18.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Program.cs",
               "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Program.cs",
               "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBgAAABAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T11:56:55.816Z"
+              "WhenOpened": "2024-10-17T11:56:55.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T08:42:11.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\AuthService.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\AuthService.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Service\\Services\\AuthService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:40:47.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DistrictsController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\DistrictsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:48:18.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T11:40:28.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:50:47.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:53:28.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "D365_SalesOrderResponses.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\Responses\\D365_SalesOrderResponses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:48:50.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\OrderService.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\OrderService.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Service\\Services\\OrderService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T11:38:14.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\IServices\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T11:33:38.562Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "CancelSalesOrderRequest.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\CancelSalesOrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T11:49:12.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CancelSalesOrderResponse.cs",
+              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
+              "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
+              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
+              "RelativeToolTip": "RayaBekoIntegration.Core\\Models\\Responses\\CancelSalesOrderResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T11:51:56.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.EF\\ApplicationDbContext.cs",
@@ -351,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\IRepositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.EF\\IRepositories\\IUnitOfWork.cs",
@@ -363,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.EF\\Repositories\\UnitOfWork.cs",
@@ -375,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IDistrictService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IDistrictService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\IServices\\IDistrictService.cs",
@@ -387,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "DistrictService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\DistrictService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\DistrictService.cs",
@@ -399,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\Repositories\\BaseRepository.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.EF\\Repositories\\BaseRepository.cs",
@@ -411,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "BekoOrderStatus.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Consts\\BekoOrderStatus.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Consts\\BekoOrderStatus.cs",
@@ -423,19 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwCIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T08:42:11.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Response.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\Response.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\Response.cs",
@@ -447,19 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\AuthService.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\AuthService.cs",
-              "RelativeToolTip": "RayaBekoIntegration.Service\\Services\\AuthService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T06:40:47.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "OrderStatusLog.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\OrderStatusLog.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\OrderStatusLog.cs",
@@ -471,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "RayaOrderStatus.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Consts\\RayaOrderStatus.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Consts\\RayaOrderStatus.cs",
@@ -483,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\OrderDetail.cs",
@@ -495,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Order.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Order.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Order.cs",
@@ -507,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.EF\\IRepositories\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.EF\\IRepositories\\IBaseRepository.cs",
@@ -519,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\RefreshToken.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\RefreshToken.cs",
@@ -531,19 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "StockController.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
-              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\StockController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAcwD0AAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:50:47.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ProductStockResponse.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\ResonsesModelViews\\ProductStockResponse.cs",
@@ -555,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "SuccessfullyOrderCreationResponse.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\Responses\\SuccessfullyOrderCreationResponse.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\Responses\\SuccessfullyOrderCreationResponse.cs",
@@ -567,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "B2CRayaServiceStockResponse.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\B2CRayaServiceStockResponse.cs",
@@ -579,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "D365_SalesOrder_Request.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\D365_SalesOrder_Request.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\D365_SalesOrder_Request.cs",
@@ -591,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "StockService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\StockService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\StockService.cs",
@@ -603,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "BekoOrderRequest.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\BekoOrderRequest.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\BekoOrderRequest.cs",
@@ -615,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "IResponseService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\IServices\\IResponseService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\IServices\\IResponseService.cs",
@@ -627,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ItemInventoryQuantity.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\ItemInventoryQuantity.cs",
@@ -639,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Core\\Models\\User.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Core\\Models\\User.cs",
@@ -652,18 +671,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "TokenController.cs",
-              "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
-              "RelativeDocumentMoniker": "RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
-              "ToolTip": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
-              "RelativeToolTip": "RayaBekoIntegration.WebAPI\\Controllers\\TokenController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T06:53:28.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
               "Title": "RefreshTokenService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\RefreshTokenService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\RefreshTokenService.cs",
@@ -675,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "TokenService.cs",
               "DocumentMoniker": "E:\\RayaBekoIntegration.WebAPI\\RayaBekoIntegration\\RayaBekoIntegration.Service\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "RayaBekoIntegration.Service\\Services\\TokenService.cs",

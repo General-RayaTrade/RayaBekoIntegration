@@ -6,9 +6,13 @@ using System.Collections.Generic;
 using RayaBekoIntegration.EF;
 using Microsoft.EntityFrameworkCore;
 using RayaBekoIntegration.EF.IRepositories;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
+
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [EnableRateLimiting("Fixed")]
     [Route("api/v1.0/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase

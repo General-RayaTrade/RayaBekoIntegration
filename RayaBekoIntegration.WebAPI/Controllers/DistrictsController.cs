@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 using System.Net.Mime;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [EnableRateLimiting("Fixed")]
     [Authorize]
     [Produces(MediaTypeNames.Application.Json)]
     [Route("api/v1.0/[controller]")]

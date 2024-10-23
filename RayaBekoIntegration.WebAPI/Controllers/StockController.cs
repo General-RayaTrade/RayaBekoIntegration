@@ -7,9 +7,11 @@ using Swashbuckle.AspNetCore.Annotations;
 using Microsoft.AspNetCore.Authorization;
 using RayaBekoIntegration.Core.Models.Responses;
 using RayaBekoIntegration.Service.Services;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [EnableRateLimiting("Fixed")]
     [Authorize]
     [Produces(MediaTypeNames.Application.Json)]
     [Route("api/v1.0/[controller]")]

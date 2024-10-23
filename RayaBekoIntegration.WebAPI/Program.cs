@@ -9,11 +9,41 @@ using RayaBekoIntegration.EF.Repositories;
 using RayaBekoIntegration.Service.Services;
 using RayaBekoIntegration.Services;
 using System.Text;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking), ServiceLifetime.Scoped);
+builder.Services.AddRateLimiter(options =>
+{
+    // Define a fixed window rate limiter (for example, 1 request per minute)
+    options.AddFixedWindowLimiter("Fixed", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 10;  // Maximum number of allowed requests
+        limiterOptions.Window = TimeSpan.FromMinutes(1); // Time window
+        limiterOptions.QueueProcessingOrder = QueueProcessingOrder.OldestFirst; // Process oldest requests first
+        limiterOptions.QueueLimit = 0; // **Set QueueLimit to 0 to reject immediately once the limit is hit**
+    });
+
+    // Handle rejected requests globally
+    options.OnRejected = async (context, token) =>
+    {
+        // Return a custom response when the request is rate-limited
+        context.HttpContext.Response.StatusCode = StatusCodes.Status429TooManyRequests;
+        context.HttpContext.Response.ContentType = "application/json";
+
+        var errorResponse = new
+        {
+            message = "Too many requests. Please try again later.",
+            retryAfter = "1 minute." // Retry time in seconds
+        };
+
+        await context.HttpContext.Response.WriteAsJsonAsync(errorResponse, cancellationToken: token);
+    };
+});
+
 
 builder.Services.AddTransient<IStockService, StockService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
@@ -72,6 +102,9 @@ var app = builder.Build();
 //    app.UseSwagger();
 //    app.UseSwaggerUI();
 //}
+
+// Use the rate limiter middleware
+app.UseRateLimiter();
 
 app.UseSwagger();
 app.UseSwaggerUI();

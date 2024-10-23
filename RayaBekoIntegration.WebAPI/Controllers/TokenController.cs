@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
 
 namespace RayaBekoIntegration.WebAPI.Controllers
 {
+    [EnableRateLimiting("Fixed")]
     [Route("api/v1.0/[controller]")]
     [ApiController]
     public class TokenController : ControllerBase
