@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
+using System.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace RayaBekoIntegration.EF;
@@ -167,6 +169,39 @@ public partial class ApplicationDbContext : DbContext
 
         OnModelCreatingPartial(modelBuilder);
     }
+    public async Task<string?> GetOrderStatus(string orderNumber)
+    {
+        string? orderStatus = null;
 
+        // Define the SQL query
+        var sql = "SELECT dbo.fn_SupplyChainOrderStatus(@OrderRef)";
+
+        // Create a connection
+        using (var connection = this.Database.GetDbConnection())
+        {
+            if (connection.State == ConnectionState.Closed)
+                await connection.OpenAsync();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = sql;
+
+                // Add the parameter for the function
+                var parameter = new SqlParameter("@OrderRef", SqlDbType.VarChar)
+                {
+                    Value = orderNumber
+                };
+                command.Parameters.Add(parameter);
+
+                // Execute the query and get the result
+                var result = await command.ExecuteScalarAsync();
+
+                // Cast the result to string
+                orderStatus = result as string;
+            }
+        }
+
+        return orderStatus;
+    }
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

@@ -53,6 +53,7 @@ builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<IDistrictService, DistrictService>();
+builder.Services.AddScoped(typeof(IResponseService<>), typeof(ResponseService<>));
 //builder.Services.AddTransient<IResponseService<T>, ResponseService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 using RayaBekoIntegration.Core.IServices;
 using RayaBekoIntegration.Core.Models;
 using RayaBekoIntegration.Core.Models.Responses;
 using RayaBekoIntegration.Service.Services;
-using RayaBekoIntegration.WebAPI.ResonsesModelViews;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net.Mime;
 
@@ -19,140 +17,99 @@ namespace RayaBekoIntegration.WebAPI.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        private readonly IResponseService<D365_SalesOrderResponses> _responseService;
         private readonly IOrderService _orderService;
+
         public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
-            _responseService = new ResponseService<D365_SalesOrderResponses>();
         }
-        [HttpPost("Create")]
+
+        [HttpPost("create")]
         [Produces("application/json")]
-        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<ProductStockResponse>))]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<D365_SalesOrderResponses>))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
         [SwaggerOperation(
-            Summary = "Create an order based on Beko request",
-            Description = "Creates an order in Raya's system from the Beko order details provided."
+            Summary = "Create Order",
+            Description = "Creates an order in Raya's system based on Beko's order request."
         )]
         public async Task<IActionResult> CreateOrder([FromBody] BekoOrderRequest bekoOrder)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (bekoOrder == null)
+                return BadRequest(new { success = false, message = "Invalid order data." });
+
             try
             {
-                if (!ModelState.IsValid)
-                    return BadRequest(ModelState);
-
-                // Validate incoming BEKO order
-                if (bekoOrder == null)
-                {
-                    return BadRequest("Invalid order data.");
-                }
-
-                // Call service to map and create the order in Raya's system
-                var orderResponses = await _orderService.CreateOrderFromBekoAsync(bekoOrder);
-                Response<D365_SalesOrderResponses> model;
-                if (orderResponses == null || !orderResponses.D365_SalesOrderResponseList.FirstOrDefault()!.status)
-                {
-                    model = _responseService.CreateResponse(statusCode: 400, payload: orderResponses);
-                }
-                else
-                {
-                    model = _responseService.CreateResponse(statusCode: 200, payload: orderResponses);
-                }
-
-                // Return success response
-                return Ok(model);
+                var orderResponse = await _orderService.CreateOrderFromBekoAsync(bekoOrder);
+                return CreateResponse<D365_SalesOrderResponses>(orderResponse, new ResponseService<D365_SalesOrderResponses>());
             }
             catch (Exception ex)
             {
-                // Handle errors and return appropriate response
-                return StatusCode(500, new
-                {
-                    success = false,
-                    message = $"Error creating order: {ex.Message}"
-                });
+                return StatusCode(500, new { success = false, message = $"Error creating order: {ex.Message}" });
             }
         }
-        [HttpPost("Cancel/{OrderNumber}")]
+
+        [HttpPost("cancel/{orderNumber}")]
         [Produces("application/json")]
-        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<ProductStockResponse>))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<CancelSalesOrderResponse>))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
         [SwaggerOperation(
-            Summary = "Create an order based on Beko request",
-            Description = "Creates an order in Raya's system from the Beko order details provided."
+            Summary = "Cancel Order",
+            Description = "Cancels an order in Raya's system based on the order number provided."
         )]
-        public async Task<IActionResult> Cancel(int BekoOrderNumber)
+        public async Task<IActionResult> CancelOrder(int orderNumber)
         {
+            if (orderNumber <= 0)
+                return BadRequest(new { success = false, message = "Invalid order number." });
+
             try
             {
-                // Call service to map and create the order in Raya's system
-                var orderResponses = await _orderService.CancelOrder(BekoOrderNumber);
-                var responseService = new ResponseService<CancelSalesOrderResponse>();
-
-                Response<CancelSalesOrderResponse> model;
-                if (orderResponses == null || !orderResponses.Status)
-                {
-                    model = responseService.CreateResponse(statusCode: 400, payload: orderResponses);
-                }
-                else
-                {
-                    model = responseService.CreateResponse(statusCode: 200, payload: orderResponses);
-                }
-
-                // Return success response
-                return Ok(model);
+                var cancelResponse = await _orderService.CancelOrder(orderNumber);
+                return CreateResponse<CancelSalesOrderResponse>(cancelResponse, new ResponseService<CancelSalesOrderResponse>());
             }
             catch (Exception ex)
             {
-                // Handle errors and return appropriate response
-                return StatusCode(500, new
-                {
-                    success = false,
-                    message = $"Error creating order: {ex.Message}"
-                });
+                return StatusCode(500, new { success = false, message = $"Error cancelling order: {ex.Message}" });
             }
         }
-        //[HttpPost("return-status/{orderId}")]
-        //[Produces("application/json")]
-        //[ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Response<ProductStockResponse>))]
-        //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
-        //[SwaggerOperation(
-        //    Summary = "Create an order based on Beko request",
-        //    Description = "Creates an order in Raya's system from the Beko order details provided."
-        //)]
-        //public async Task<IActionResult> UpdateReturnStatus(int orderId, [FromBody] BekoOrderRequest bekoOrder)
-        //{
-        //    try
-        //    {
-        //        if (!ModelState.IsValid)
-        //            return BadRequest(ModelState);
 
-        //        // Validate incoming BEKO order
-        //        if (bekoOrder == null)
-        //        {
-        //            return BadRequest("Invalid order data.");
-        //        }
+        [HttpGet("status/{orderId}")]
+        [Produces("application/json")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<OrderStatusResponse>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
+        [SwaggerOperation(
+            Summary = "Get Order Status",
+            Description = "Retrieves the status of an order in Raya's system using the order ID."
+        )]
+        public async Task<IActionResult> GetOrderStatus(string orderId)
+        {
+            if (string.IsNullOrWhiteSpace(orderId))
+                return BadRequest(new { success = false, message = "Order ID is required." });
 
-        //        // Call service to map and create the order in Raya's system
-        //        var createdOrder = await _orderService.CreateOrderFromBekoAsync(bekoOrder);
+            try
+            {
+                var orderStatus = await _orderService.GetOrderStatus(orderId);
+                return CreateResponse<OrderStatusResponse>(new OrderStatusResponse {
+                    BekoOrderId = orderId,
+                    items = new List<Item>(),
+                    status = true
+                }, new ResponseService<OrderStatusResponse>()
+                    );
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = $"Error retrieving order status: {ex.Message}" });
+            }
+        }
 
-        //        // Return success response
-        //        return Ok(new
-        //        {
-        //            success = true,
-        //            message = "Order created successfully",
-        //            orderNumber = createdOrder.M_OrderNumber
-        //        });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Handle errors and return appropriate response
-        //        return StatusCode(500, new
-        //        {
-        //            success = false,
-        //            message = $"Error creating order: {ex.Message}"
-        //        });
-        //    }
-        //}
+        private IActionResult CreateResponse<T>(T response, IResponseService<T> _responseService) where T : class, IStatus
+        {
+            if (response == null || !response.status == null)
+                return BadRequest(_responseService.CreateResponse(statusCode: 400, payload: response));
 
+            return Ok(_responseService.CreateResponse(statusCode: 200, payload: response));
+        }
     }
 }

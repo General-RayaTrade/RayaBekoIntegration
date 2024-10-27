@@ -14,5 +14,6 @@ namespace RayaBekoIntegration.Core.IServices
         SalesOrder MapBekoOrderToRayaOrder(BekoOrderRequest bekoOrder);
         Task<CancelSalesOrderResponse> CancelOrder(int bekoOrderId);
         Task<string> CallingB2CRayaCancelOrderAPI(CancelSalesOrderRequest requestModel);
+        Task<string> GetOrderStatus(string orderId);
     }
 }

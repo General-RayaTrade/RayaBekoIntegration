@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RayaBekoIntegration.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3159b93d33f2e60c1dff1db3679df6a065055bd9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abf2ad2b0281f35cf815a5650c5adbdc68526720")]
 [assembly: System.Reflection.AssemblyProductAttribute("RayaBekoIntegration.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RayaBekoIntegration.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

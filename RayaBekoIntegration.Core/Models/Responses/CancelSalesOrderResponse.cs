@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RayaBekoIntegration.Core.Models.Responses
 {
-    public class CancelSalesOrderResponse
+    public class CancelSalesOrderResponse : IStatus
     {
-        public bool Status { set; get; }
+        public bool? status { set; get; }
         public string Message { set; get; }
     }
 }

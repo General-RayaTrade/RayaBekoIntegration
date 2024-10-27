@@ -64,7 +64,7 @@ namespace RayaBekoIntegration.Service.Services
                 });
 
                 D365_SalesOrderResponses response = System.Text.Json.JsonSerializer.Deserialize<D365_SalesOrderResponses>(result)!;
-                if (response.D365_SalesOrderResponseList != null && response.D365_SalesOrderResponseList.First().status && !response.D365_SalesOrderResponseList.First().Message.Contains("already exist"))
+                if (response.D365_SalesOrderResponseList != null && response.D365_SalesOrderResponseList.First().status != false && !response.D365_SalesOrderResponseList.First().Message.Contains("already exist"))
                 {
                     var order = new Order
                     {
@@ -186,6 +186,11 @@ namespace RayaBekoIntegration.Service.Services
             Console.WriteLine(DateTime.Now.ToString() + " Dx Order for : " + _SalesOrder_Request.SalesOrder[0].M_OrderNumber + " with result: " + result);
 
             return result;
+        }
+
+        public async Task<string> GetOrderStatus(string orderId)
+        {
+           return await _unitOfWork.context.GetOrderStatus(orderId);
         }
     }
 }
