@@ -53,6 +53,8 @@ builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<IDistrictService, DistrictService>();
+builder.Services.AddTransient<IProductsService, ProductsService>();
+builder.Services.AddTransient<IVendorService, VendorService>();
 builder.Services.AddScoped(typeof(IResponseService<>), typeof(ResponseService<>));
 //builder.Services.AddTransient<IResponseService<T>, ResponseService>();
 builder.Services.AddControllers();

@@ -18,10 +18,12 @@ namespace RayaBekoIntegration.WebAPI.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
+        private readonly IVendorService _vendorService;
 
-        public OrderController(IOrderService orderService)
+        public OrderController(IOrderService orderService, IVendorService vendorService)
         {
             _orderService = orderService;
+            _vendorService = vendorService;
         }
 
         [HttpPost("create")]
@@ -103,7 +105,36 @@ namespace RayaBekoIntegration.WebAPI.Controllers
                 return StatusCode(500, new { success = false, message = $"Error retrieving order status: {ex.Message}" });
             }
         }
+        [HttpPut("Update-Status/{orderId}/{orderStatus}")]
+        [Produces("application/json")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<UpdateOrderStatusResponse>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response<object>))]
+        [SwaggerOperation(
+            Summary = "Update Order Status",
+            Description = "Updates the status of an order in Raya's system and Beko using the order ID."
+        )]
+        public async Task<IActionResult> UpdateOrderStatus(string orderId, string orderStatus)
+        {
+            if (string.IsNullOrWhiteSpace(orderId))
+                return BadRequest(new { success = false, message = "Order ID is required." });
 
+            try
+            {
+                await _orderService.UpdateOrderStatus(orderId, orderStatus);
+                var result = await _vendorService.UpdateOrderStatus(orderId, orderStatus);
+                return CreateResponse<UpdateOrderStatusResponse>(new UpdateOrderStatusResponse
+                {
+                    BekoOrderId = orderId,
+                    OrderStatus = orderStatus,
+                    status = true
+                }, new ResponseService<UpdateOrderStatusResponse>()
+                    );
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = $"Error update order: {ex.Message}" });
+            }
+        }
         private IActionResult CreateResponse<T>(T response, IResponseService<T> _responseService) where T : class, IStatus
         {
             if (response == null || !response.status == null)

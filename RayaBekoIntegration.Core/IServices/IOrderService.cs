@@ -15,5 +15,6 @@ namespace RayaBekoIntegration.Core.IServices
         Task<CancelSalesOrderResponse> CancelOrder(int bekoOrderId);
         Task<string> CallingB2CRayaCancelOrderAPI(CancelSalesOrderRequest requestModel);
         Task<string> GetOrderStatus(string orderId);
+        Task UpdateOrderStatus(string orderId, string orderStatus);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RayaBekoIntegration.WebAPI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace RayaBekoIntegration.EF.IRepositories
         IBaseRepository<OrderDetail> orderDetails {  get; }
         IBaseRepository<OrderStatusLog> orderStatusLogs {  get; }
         IBaseRepository<VWcityDistrict> vWCityDistricts {  get; }
+        IBaseRepository<VWbeko> vWBekos { get; }
         int Complete();
     }
 }

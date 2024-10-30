@@ -1,4 +1,5 @@
 ﻿using RayaBekoIntegration.EF.IRepositories;
+using RayaBekoIntegration.WebAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace RayaBekoIntegration.EF.Repositories
         public IBaseRepository<OrderDetail> orderDetails { get; set; }
         public IBaseRepository<OrderStatusLog> orderStatusLogs { get; set; }
         public IBaseRepository<VWcityDistrict> vWCityDistricts { get; }
-
+        public IBaseRepository<VWbeko> vWBekos { get; }
         public UnitOfWork(ApplicationDbContext context)
         {
             this.context = context;
@@ -26,6 +27,7 @@ namespace RayaBekoIntegration.EF.Repositories
             orderDetails = new BaseRepository<OrderDetail>(context);
             orderStatusLogs = new BaseRepository<OrderStatusLog>(context);
             vWCityDistricts = new BaseRepository<VWcityDistrict>(context);
+            vWBekos = new BaseRepository<VWbeko>(context);
         }
 
         public int Complete()

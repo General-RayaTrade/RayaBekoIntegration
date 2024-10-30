@@ -190,7 +190,19 @@ namespace RayaBekoIntegration.Service.Services
 
         public async Task<string> GetOrderStatus(string orderId)
         {
-           return await _unitOfWork.context.GetOrderStatus(orderId);
+           return (await _unitOfWork.orders.FindAsync(pro => pro.BekoOrderNumber == orderId))?.BekoOrderStatus;
+        }
+
+        public async Task UpdateOrderStatus(string orderId, string orderStatus)
+        {
+            var order = await _unitOfWork.orders.FindAsync(ord => ord.BekoOrderNumber == orderId);
+            if (order == null)
+            {
+                throw new Exception($"This order is invalid: {orderId}");
+            }
+            order.BekoOrderStatus = orderStatus;
+            order.RayaOrderStatus = orderStatus;
+            _unitOfWork.orders.Update(order);
         }
     }
 }

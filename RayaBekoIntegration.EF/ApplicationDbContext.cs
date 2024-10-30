@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using Microsoft.EntityFrameworkCore;
+using RayaBekoIntegration.WebAPI;
 
 namespace RayaBekoIntegration.EF;
 
@@ -26,6 +27,8 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<OrderStatusLog> OrderStatusLogs { get; set; }
     public virtual DbSet<VWcityDistrict> VWcityDistricts { get; set; }
+    public virtual DbSet<VWbeko> VWbekos { get; set; }
+    public virtual DbSet<PendingOrderStatus> PendingOrderStatuses { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -35,6 +38,140 @@ public partial class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<PendingOrderStatus>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__PendingO__3214EC07EE956BD7");
+
+            entity.ToTable("PendingOrderStatus");
+
+            entity.Property(e => e.BekoOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.CreationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.ModificationDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.RayaOrderNumber)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+            entity.Property(e => e.RayaOrderStatus)
+                .HasMaxLength(256)
+                .IsUnicode(false);
+        });
+        modelBuilder.Entity<VWbeko>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("vWBeko");
+
+            entity.Property(e => e.AdditionalImage)
+                .HasMaxLength(4000)
+                .HasColumnName("Additional_Image");
+            entity.Property(e => e.Amount)
+                .HasColumnType("decimal(38, 8)")
+                .HasColumnName("AMOUNT");
+            entity.Property(e => e.Brand).HasMaxLength(50);
+            entity.Property(e => e.CatName)
+                .HasMaxLength(254)
+                .HasColumnName("Cat Name");
+            entity.Property(e => e.CategoryName)
+                .HasMaxLength(254)
+                .HasColumnName("Category_Name");
+            entity.Property(e => e.Color)
+                .HasMaxLength(50)
+                .HasColumnName("COLOR");
+            entity.Property(e => e.ColorAr).HasColumnName("Color_Ar");
+            entity.Property(e => e.Createddatetime)
+                .HasColumnType("datetime")
+                .HasColumnName("CREATEDDATETIME");
+            entity.Property(e => e.DepName)
+                .HasMaxLength(254)
+                .HasColumnName("Dep Name");
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Inventlocationid)
+                .HasMaxLength(10)
+                .HasColumnName("INVENTLOCATIONID");
+            entity.Property(e => e.ItemCode)
+                .HasMaxLength(100)
+                .HasColumnName("Item_code");
+            entity.Property(e => e.ItemTax)
+                .HasMaxLength(10)
+                .HasColumnName("ITEM_TAX");
+            entity.Property(e => e.ItemType)
+                .HasMaxLength(10)
+                .HasColumnName("ITEM_Type");
+            entity.Property(e => e.Itemid)
+                .HasMaxLength(20)
+                .HasColumnName("ITEMID");
+            entity.Property(e => e.MainImage)
+                .HasMaxLength(4000)
+                .HasColumnName("Main_Image");
+            entity.Property(e => e.MenuItemAr).HasColumnName("MenuItem_Ar");
+            entity.Property(e => e.MenuItemEn)
+                .HasMaxLength(100)
+                .HasColumnName("MenuItem_EN");
+            entity.Property(e => e.Model)
+                .HasMaxLength(50)
+                .HasColumnName("MODEL");
+            entity.Property(e => e.ModelImageUrl)
+                .HasMaxLength(4000)
+                .HasColumnName("ModelImage_URL");
+            entity.Property(e => e.ModelName)
+                .HasMaxLength(100)
+                .HasColumnName("Model_Name");
+            entity.Property(e => e.Modifieddatetime)
+                .HasColumnType("datetime")
+                .HasColumnName("MODIFIEDDATETIME");
+            entity.Property(e => e.Namealias)
+                .HasMaxLength(20)
+                .HasColumnName("NAMEALIAS");
+            entity.Property(e => e.Product).HasColumnName("PRODUCT");
+            entity.Property(e => e.Qty)
+                .HasColumnType("numeric(38, 6)")
+                .HasColumnName("QTY");
+            entity.Property(e => e.QtyAvailphysical)
+                .HasColumnType("numeric(38, 6)")
+                .HasColumnName("QTY_AVAILPHYSICAL");
+            entity.Property(e => e.RBrand)
+                .HasMaxLength(60)
+                .HasColumnName("R_Brand");
+            entity.Property(e => e.RBrickcode)
+                .HasMaxLength(60)
+                .HasColumnName("R_BRICKCODE");
+            entity.Property(e => e.RColor).HasColumnName("R_COLOR");
+            entity.Property(e => e.ROrainvitemid)
+                .HasMaxLength(60)
+                .HasColumnName("R_ORAINVITEMID");
+            entity.Property(e => e.ReportMainCategoryAr).HasColumnName("Report_Main_category_AR");
+            entity.Property(e => e.ReportMainCategoryEn).HasColumnName("Report_Main_category_En");
+            entity.Property(e => e.ShortDescriptionAr)
+                .HasMaxLength(4000)
+                .HasColumnName("Short_Description_Ar");
+            entity.Property(e => e.ShortDescriptionEn)
+                .HasMaxLength(4000)
+                .HasColumnName("Short_Description_En");
+            entity.Property(e => e.Sku)
+                .HasMaxLength(100)
+                .HasColumnName("SKU");
+            entity.Property(e => e.SkuBrand)
+                .HasMaxLength(60)
+                .HasColumnName("SKU Brand");
+            entity.Property(e => e.SkuColor).HasColumnName("SKU Color");
+            entity.Property(e => e.SkuImage)
+                .HasMaxLength(4000)
+                .HasColumnName("SKU_Image");
+            entity.Property(e => e.SkuModel)
+                .HasMaxLength(60)
+                .HasColumnName("SKU Model");
+            entity.Property(e => e.Skuname)
+                .HasMaxLength(4000)
+                .HasColumnName("SKUName");
+            //entity.Property(e => e.SubsidyCat)
+            //    .HasMaxLength(500)
+            //    .HasColumnName("Subsidy_Cat");
+        });
         modelBuilder.Entity<VWcityDistrict>(entity =>
         {
             entity
@@ -168,40 +305,6 @@ public partial class ApplicationDbContext : DbContext
         });
 
         OnModelCreatingPartial(modelBuilder);
-    }
-    public async Task<string?> GetOrderStatus(string orderNumber)
-    {
-        string? orderStatus = null;
-
-        // Define the SQL query
-        var sql = "SELECT dbo.fn_SupplyChainOrderStatus(@OrderRef)";
-
-        // Create a connection
-        using (var connection = this.Database.GetDbConnection())
-        {
-            if (connection.State == ConnectionState.Closed)
-                await connection.OpenAsync();
-
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = sql;
-
-                // Add the parameter for the function
-                var parameter = new SqlParameter("@OrderRef", SqlDbType.VarChar)
-                {
-                    Value = orderNumber
-                };
-                command.Parameters.Add(parameter);
-
-                // Execute the query and get the result
-                var result = await command.ExecuteScalarAsync();
-
-                // Cast the result to string
-                orderStatus = result as string;
-            }
-        }
-
-        return orderStatus;
     }
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
